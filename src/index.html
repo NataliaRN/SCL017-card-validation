@@ -1,14 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="vieport"content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-AU-Compatinle"content="ie=edge">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    
+</head>
+<body>
+    <div class="contenedor">        
+        <section class="tarjeta" id="tarjeta">
+            <div class="delantera">
+                <div class="logo-marca" id="logo-marca">
+            
+            </div>
+            <img src="img/Chip.png" class="chip" alt="">
+            <div class="datos">
+                <div class="grupo" id="numero">
+                    <p class="label">Numero Tarjeta</p>
+                    <p class="numero">#### #### #### #####</p>
+                </div>
+                <div class="flexbox">
+                    <div class="grupo" id="nombre">
+                        <p class="label">NOMBRE TARJETA</p>
+                        <P class="nombre ">Jhon Doe</P>
+                    </div>
+
+                    <div class="grupo" id="expiracion">
+                        <p class="label">Expiracion</p>
+                        <p class="expiracion"><span class="mes">MM</span> / <span class="year">AA</span></p>
+                    </div>
+                </div>
+                
+
+
+            </div>
+    </div>
+
+    <div class="trasera">
+        <div class="barra magnetica"></div>
+        <div class="datos">
+            <div class="grupo" id="firma">
+                <p class="label">Firma</p>
+                <div class="firma"><p></p></div>
+            </div>
+            <div class="grupo" id="ccv">
+                <p class="label">CCV</p>
+                <P class="ccv"></P>
+            </div>
+    </div>
+    <p class="leyenda">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit</p>
+    <a href="#" class="link-banco">www.tubanco.cl</a>
+    </div>
+        </section>  
+
+        <div class="contenedor-btn">
+            <button class="btn-abrir-formulario" id="btn-abrir formulario">
+                <i class="fas fa-plus"></i>
+            </button>
+        </div>
+        <form action="" id="formulario-tarjeta" class="formulario-tarjeta">
+            <div class="grupo">
+                <label for="inputnumero">Numero Tarjeta</label>
+                <input type="text" id="inputNumero" maxlength="19" autocomplete="off">
+            </div>
+            <div class="grupo">
+                   <label for="input-nombre">Nombre</label>
+                   <input type="text" id="inputnombre" maxlength="19" autocomplete="off">
+            </div>
+            <div class="flexbox">
+                <div class="grupo expira">
+                    <label for="selectMes">Expiracion</label>
+                    <div class="flexbox">
+                        <div class="grupo-select">
+                            <select name="mes" id="selectMes">
+                                <option disabled selected>mes</option>
+                            </select>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        <div class="grupo-select">
+                            <select name="year" id="selecYear">
+                                <option disabled selected>Año</option>
+                            </select>
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        </div>
+                    </div>
+
+                    <div class="grupo CCV">
+                        <label for="inputCCV">CCV</label>
+                        <input type="text" id="inputCCV" maxlength="3">
+                    </div>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar</button>
+        </form>
+    </div>             
     <script src="index.js" type="module"></script>
+    <script src="validator.js" type="module"></script>
   </body>
 </html>
