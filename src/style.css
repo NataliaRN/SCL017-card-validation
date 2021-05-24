@@ -5,7 +5,7 @@
 }
 
 body {
-	background: #ddeefc;
+	background:url(../src/Img/bg-tarjeta/bg-tarjeta-01.jpg);
 	font-family: 'Lato', sans-serif;
 }
 
@@ -43,7 +43,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  box-shadow: 0 10px 10px rgba(90,116,148,0.3);
+  box-shadow: 0 10px 0 rgba(90,116,148,0.3);
 }
 
 .tarjeta .delantera {
@@ -97,18 +97,16 @@ body {
   backface-visibility: hidden;
 
 }
-
 .trasera .barra-magnetica {
   height: 40px;
-  background: black;
+  background: #000;
   width: 100%;
   position: absolute;
   top: 30px;
   left: 0;
-
 }
 
-.trasera .datos{ 
+.trasera .datos { 
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
@@ -122,13 +120,13 @@ body {
 }
 .trasera .datos #firma .firma{
   height: 40px;
-  background: repeating-linear-gradient(skyblue 0 skyblue 5px, orange 5px, orange 10px); 
+  background: repeating-linear-gradient(skyblue 0, skyblue 5px, orange 5px, orange 10px); 
 
 }
 .trasera .datos #firma .firma p{
   line-height: 40px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, cursive;
-  color: black;
+  color: #000;
   font-size: 30px;
   padding: 0 10px;
   text-transform: capitalize;
@@ -138,15 +136,15 @@ body {
   width: 20px;
 
 }
-.trasera .datos #ccv .ccv{
-  background: blanchedalmond;
+.trasera .datos #ccv .ccv {
+  background: #fff;
   height: 40px;
-  color: black;
+  color: #000;
   padding: 10px;
   text-align: center;
 
 }
-.trasera .leyenda{
+.trasera .leyenda {
   font-size: 14px;
   line-height: 24px;
   
@@ -156,6 +154,7 @@ body {
   color: #fff;
   
 }
+
 .contenedor-btn .btn-abrir-formulario {
   width: 50px;
   height: 50px;
@@ -176,39 +175,42 @@ body {
 }
 .contenedor-btn .btn-abrir-formulario:hover {
   background: #1850b1;
+  
 }
-.contenedor-btn .btn-abrir-formulario.active{
+.contenedor-btn .btn-abrir-formulario.active {
   transform: rotate(45deg);
 }
 .formulario-tarjeta {
-  background: white;
+  background: #FFF;
   width: 100%;
   max-width: 700px;
   padding: 150px 30px 30px 30px;
   border-radius: 10px;
   position: relative;
   top: -150px;
-  z-index:1;
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0 );
+  z-index: 1;
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   transition: clip-path .3s ease-out;
 
+  
 }
 .formulario-tarjeta.active {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
-.formulario-tarjeta label{
+.formulario-tarjeta label {
   display: block;
   color: #7d8994;
   margin-bottom: 5px;
   font-size: 16px;
+
 }
 .formulario-tarjeta input,
 .formulario-tarjeta select,
 .btn-enviar {
-  border: 2px solid #ced6ce;
+  border: 2px solid #ced6e0;
   font-size: 18px;
   height: 50px;
-  width: 10%;
+  width: 100%;
   padding: 5px 12px;
   transition: .3s ease all;
   border-radius: 5px;
@@ -216,44 +218,48 @@ body {
 .formulario-tarjeta input:hover,
 .formulario-tarjeta select:hover {
   border: 2px solid #93bded;
+
 }
 .formulario-tarjeta input:focus,
 .formulario-tarjeta select:focus {
-  outline: black;
-  box-shadow: 1px 7px 10px -5px rga(90,116,148,0,3);
-} 
+  outline: rgb(4,4,4);
+  box-shadow: 1px 7px 10px -5px rgba(90, 116, 148, 0.3);
+}
 .formulario-tarjeta input {
   margin-bottom: 20px;
   text-transform: uppercase;
+
 }
-.formulario-tarjeta .flexbox{
+.formulario-tarjeta .flexbox {
   display: flex;
   justify-content: space-between;
+  
 }
-.formulario-tarjeta .expira{
+.formulario-tarjeta .expira {
   width: 100%;
 
 }
 .formulario-tarjeta .ccv{
-  min-width: 100%;
+  min-width: 100px;
 }
-.formulario-tarjeta .grupo-select {
-  width: 100%;
+.formulario-tarjeta .grupo-select{
+  width: 180px;
   margin-right: 15px;
   position: relative;
 }
 .formulario-tarjeta select{
   -webkit-appearance: none;
+
 }
-.formulario-tarjeta .grupo-select{
+.formulario-tarjeta .grupo-select i{
   position: absolute;
   color: #ced6e0;
   top: 18px;
   right: 15px;
   transition: .3s ease all;
-  
+
 }
-.formulario-tarjeta .grupo-select:hover{
+.formulario-tarjeta .grupo-select:hover i{
   color: #93bfed;
 }
 .formulario-tarjeta .btn-enviar{
@@ -264,9 +270,7 @@ body {
   background: #2364d2;
   box-shadow: 2px 2px 10px 0px rgba(0,85,212,0.4);
   cursor: pointer;
-  
 }
 .formulario-tarjeta .btn-enviar:hover{
   background: #1850b1;
 }
-
