@@ -17,8 +17,8 @@ algun software mas sofisticado.
 
 ## Imagen del prototipo en papel
 
-![GitHub Logo](/imagenes/prototipo/Prototipo-1)
-![GitHub Logo](/imagenes/prototipo/Prototipo-2)
+![Prototipo1](https://github.com/NataliaRN/SCL017-card-validation/blob/master/Imagenes/Prototipo/Prototipo-1.png)
+![prototipo2](/imagenes/prototipo/Prototipo-2)
 
 
 
@@ -38,7 +38,7 @@ será válido si la suma de sus dígitos finales es un múltiplo de 10.
 
 https://www.figma.com/file/xlDDpf1z8o4ofRFtq9Gbsv/Validacion-Tarjeta-de-Credito?node-id=1%3A507
 
-![GitHub Logo](/imagenes/Prototipo-Figma)
+![Figma](/imagenes/Prototipo-Figma)
 
 
 
@@ -52,14 +52,14 @@ por esto cambie la imagen inicial y trabaje en un proyecto distinto pero funcion
 
 ## Imagen del prototipo final
 
-![GitHub Logo](/imagenes/Prototipo-Final.png)
+![Prototipo-Final](/imagenes/Prototipo-Final.png)
 
 
 ## 4. imagen y prototipo final del proyecto
 si los datos de la tarjeta de credito son validos esta indica que la validacion ha sido exitosa.
 
-![GitHub Logo](/imagenes/Error.png)
-![GitHub Logo](/imagenes/TC-Valida.png)
+![Error](/imagenes/Error.png)
+![TCV](/imagenes/TC-Valida.png)
 
 
 
