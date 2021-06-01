@@ -1,9 +1,5 @@
 # Tarjeta de crédito válida
 
-Demo
-
-***
-
 Soy Natalia Romero y el proyecto que escoji es la validacion de Tarjeta de credito.
 
 ## 1. Resumen del Proyecto
@@ -21,8 +17,9 @@ algun software mas sofisticado.
 
 ## Imagen del prototipo en papel
 
+![GitHub Logo](/imagenes/Prototipo/Prototipo-1 (1).png)
+![GitHub Logo](/imagenes/Prototipo/Prototipo-1 (2).png)
 
-***
 
 
 El algoritmo de Luhn, también llamado algoritmo de módulo 10, es un método de suma de verificación,
@@ -37,11 +34,11 @@ será válido si la suma de sus dígitos finales es un múltiplo de 10.
 
 
 
-***
-
 ## 2 . Link e imagen de prototipo figma
 
 https://www.figma.com/file/xlDDpf1z8o4ofRFtq9Gbsv/Validacion-Tarjeta-de-Credito?node-id=1%3A507
+
+![GitHub Logo](/imagenes/Prototipo Figma.png)
 
 
 
@@ -58,10 +55,14 @@ por esto cambie la imagen inicial y trabaje en un proyecto distinto pero funcion
 
 ## Imagen del prototipo final
 
+![GitHub Logo](/imagenes/Prototipo Final.png)
+
 
 ## 4. imagen y prototipo final del proyecto
 si los datos de la tarjeta de credito son validos esta indica que la validacion ha sido exitosa.
 
+![GitHub Logo](/imagenes/Error.png)
+![GitHub Logo](/imagenes/TC Valida.png)
 
 
 
