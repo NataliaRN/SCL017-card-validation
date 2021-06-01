@@ -1,51 +1,49 @@
-/* eslint-disable no-undef */
-// eslint-disable-next-line no-unused-vars
-function fValidarTarjeta(){
-    var opt = $("#lstTipoTarjeta option:selected").val();
-    // eslint-disable-next-line no-undef
-    codigo = $("#numero-tarjeta").val().replace('-', '');
-    var msg = "Valor incorrecto";
-    // eslint-disable-next-line no-undef
-    VISA = /^4[0-9]{3}-?[0-9]{4}-?[0-9]{4}-?[0-9]{4}$/;
-    // eslint-disable-next-line no-undef
-    MASTERCARD = /^5[1-5][0-9]{2}-?[0-9]{4}-?[0-9]{4}-?[0-9] {2} {4}$/;
-    // eslint-disable-next-line no-undef
-    
+const validator = {
+  // ...
 
-    // eslint-disable-next-line no-undef
-    $("#tarjeta .numero").html("");
-    // eslint-disable-next-line no-undef
-    if(luhn(codigo)){
-        if(opt == "VISA" && !codigo.match(VISA)){
-            alert(msg);
-        }
-        if(opt == "MASTERCARD" && !codigo.match(MASTERCARD)){
-            alert(msg);
-        }
-        
-    } else {
-        alert(msg);
+  isValid: function (creditCardNumber) {
+    //long tc es el largo es igual al numero de la tarjeta de credito dada por el usuario
+    let long = creditCardNumber.length;
+    //position_even  es la posicion par (2 posicion de cada numero) del long de tc
+    let position_even = long % 2;
+    //declaro variable suma con valor 0
+    let suma = 0;
+    let currentdigit;
+    //uso un for para recorrer el long de un valor ingresado desde el fin a un inicio, por ende el contador i se decrementa en 1 en cada ciclo
+    for (let i = long - 1; i >= 0; i--) {
+      //con chartAt devuelvo el caracter en el lugar que le indico(i)y lo transformo a numero
+      currentdigit = parseInt(creditCardNumber.charAt(i), 10);
+      
+      //si la posicion es par multiplico current digit (digito actual por 2
+      if (i % 2 == position_even) {
+        currentdigit *= 2;
+       // console.log(currentdigit);
+      }
+      //si el digito actual es mayor a 9, al digito actual le resto 9
+      if (currentdigit > 9) {
+        currentdigit -= 9;
+      }
+      //en la variable suma acumulo el digito actual
+      suma += currentdigit;
     }
-}
-function luhn(value) {
-    // Acepta solo digitos.
-    if(valorInput == ''){
-        numeroTarjeta.textContent = '#### #### #### #####';}
-    formulario.inputNumero.value = valorInput
-    if (/[^0-9-\s]+/.test(value)) return false;
-    // El Algoritmo de Luhn.
-    let nCheck = 0, bEven = false;
-    value = value.replace(/\D/g, "");
-    for (var n = value.length - 1; n >= 0; n--) {
-        var cDigit = value.charAt(n),
-        nDigit = parseInt(cDigit, 10);
-        if (bEven && (nDigit *= 2) > 9) nDigit -= 9; nCheck +=  nDigit; bEven = !bEven;
-    }
-    return (nCheck % 10) == 0;
-}
+    // el resto de suma dividido 10 debe ser 0 para ser una tc valida
+    //console.log(suma);
+    return (suma % 10)==0;
+  },
 
-    btnEnviar.addEventListener('click', () =>{
-    btnEnviar.classList.toggle('active');
-    
-});
-    
+  maskify: function (creditCardNumber) {
+    //si el long de la tarjeta es menor a 6 caracteres devuelvo el mismo numero ingresado
+    if (creditCardNumber.length < 6) return creditCardNumber;
+    //almaceno los ultimos 4 digitos//substr retorno una parte del string
+    let last4digit = creditCardNumber.substr(-4);
+    //tomo todos los caracteres a excepcion de los ultimos 4 digitos
+    let replacecharacter = creditCardNumber.substr(0,creditCardNumber.length - 4);
+    //tomo los numeros anteriores distintos de los ultimos 4 y los reemplazo por #
+  let hidecharacter = replacecharacter.replace(/\w/g, "#");//(/\w/g) expresion regular para reemplazar todos los valores del string
+    //y por ultimo retorno la union de los caracteres de la variable hidecharacter (ocultar caracteres) y los ultimos 4 digitos
+    return `${hidecharacter}${last4digit}`;
+  },
+};
+
+export default validator;
+  
