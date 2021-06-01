@@ -18,7 +18,7 @@ algun software mas sofisticado.
 ## Imagen del prototipo en papel
 
 ![Prototipo1](https://github.com/NataliaRN/SCL017-card-validation/blob/master/Imagenes/Prototipo/Prototipo-1.png)
-![prototipo2](/imagenes/prototipo/Prototipo-2)
+![prototipo2](https://github.com/NataliaRN/SCL017-card-validation/blob/master/Imagenes/Prototipo/Prototipo-2.png)
 
 
 
@@ -38,7 +38,7 @@ será válido si la suma de sus dígitos finales es un múltiplo de 10.
 
 https://www.figma.com/file/xlDDpf1z8o4ofRFtq9Gbsv/Validacion-Tarjeta-de-Credito?node-id=1%3A507
 
-![Figma](/imagenes/Prototipo-Figma)
+![Figma](https://github.com/NataliaRN/SCL017-card-validation/blob/master/Imagenes/Prototipo-Figma.png)
 
 
 
@@ -52,14 +52,14 @@ por esto cambie la imagen inicial y trabaje en un proyecto distinto pero funcion
 
 ## Imagen del prototipo final
 
-![Prototipo-Final](/imagenes/Prototipo-Final.png)
+![Prototipo-Final](https://github.com/NataliaRN/SCL017-card-validation/blob/master/Imagenes/Prototipo-Final.png)
 
 
 ## 4. imagen y prototipo final del proyecto
 si los datos de la tarjeta de credito son validos esta indica que la validacion ha sido exitosa.
 
-![Error](/imagenes/Error.png)
-![TCV](/imagenes/TC-Valida.png)
+![Error](https://github.com/NataliaRN/SCL017-card-validation/blob/master/Imagenes/Error.png)
+![TCV](https://github.com/NataliaRN/SCL017-card-validation/blob/master/Imagenes/TC-Valida.png)
 
 
 
