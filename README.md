@@ -36,9 +36,9 @@ será válido si la suma de sus dígitos finales es un múltiplo de 10.
 
 ## 2 . Link e imagen de prototipo figma
 
-https://www.figma.com/file/xlDDpf1z8o4ofRFtq9Gbsv/Validacion-Tarjeta-de-Credito?node-id=1%3A507
+https://www.figma.com/proto/e9fnutEEejaQCqBJQ2fMMr/Tarjeta-Credito-Valida?node-id=1%3A2&scaling=min-zoom&page-id=0%3A1
 
-![Figma](https://github.com/NataliaRN/SCL017-card-validation/blob/master/Imagenes/Prototipo-Figma.png)
+![Figma](https://github.com/NataliaRN/SCL017-card-validation/blob/master/Imagenes/Prototipo-Final-Figma.png)
 
 
 
