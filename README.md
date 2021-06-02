@@ -1,5 +1,9 @@
 # Tarjeta de crédito válida
 
+#  Link Github Page
+
+https://nataliarn.github.io/SCL017-card-validation/
+
 Soy Natalia Romero y el proyecto que escoji es la validacion de Tarjeta de credito.
 
 ## 1. Resumen del Proyecto
@@ -18,7 +22,6 @@ algun software mas sofisticado.
 ## Imagen del prototipo en papel
 
 ![Prototipo1](https://github.com/NataliaRN/SCL017-card-validation/blob/master/Imagenes/Prototipo/Prototipo-1.png)
-![prototipo2](https://github.com/NataliaRN/SCL017-card-validation/blob/master/Imagenes/Prototipo/Prototipo-2.png)
 
 
 
